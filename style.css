@@ -13,12 +13,10 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     background: #1a1a1a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    display: block;
     color: white;
     padding: 10px;
+    padding-bottom: 90px; /* Space for controls */
 }
 
 #game-container {
@@ -26,10 +24,12 @@ body {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 800 / 600;
+    max-height: calc(100vh - 90px);
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: 3px solid #fff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    margin: 0 auto;
 }
 
 #game-canvas {
