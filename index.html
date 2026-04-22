@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Platformer Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div id="ui">
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 5</div>
+            <div id="level">Level: 1</div>
+        </div>
+        <div id="menu">
+            <div class="menu-content">
+                <p>Welcome to</p>
+                <h1>Platformer Game: Bang Bangag</h1>
+                <button id="start-btn">Start Game</button>
+                <p class="controls" id="controls-text">Controls: Arrow Keys to Move <>, Space to Jump _</p>
+            </div>
+        </div>
+        <div id="game-over" class="hidden">
+            <div class="menu-content">
+                <h1>Game Over!</h1>
+                <p id="final-score">Final Score: 0</p>
+                <button id="restart-btn">Play Again</button>
+            </div>
+        </div>
+        <div id="victory" class="hidden">
+            <div class="menu-content victory-content">
+                <h1>🏆 VICTORY!! 🏆</h1>
+                <h2>BATAKKK!</h2>
+                <p id="victory-score">Final Score: 0</p>
+                <p class="victory-text">You've conquered all 20 levels!</p>
+                <button id="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-controls" class="hidden">
+        <button id="left-btn" class="mobile-btn">◀</button>
+        <button id="jump-btn" class="mobile-btn">JUMP</button>
+        <button id="right-btn" class="mobile-btn">▶</button>
+    </div>
+    <div id="orientation-hint" class="hidden">
+        <p>Please rotate your device to landscape for better gameplay! 📱➡️</p>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
